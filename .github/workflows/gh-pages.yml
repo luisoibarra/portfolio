@@ -28,7 +28,7 @@ jobs:
         run: ng build --configuration "production" --base-href="https://luisoibarra.github.io/portfolio/"
 
       - name: Building Static Site
-        run: npx scully
+        run: npx scully --base-href="https://luisoibarra.github.io/portfolio/"
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
